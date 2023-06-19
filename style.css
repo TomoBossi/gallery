@@ -40,17 +40,19 @@ section {
 
 .tile {
   position: relative;
+  z-index: 1;
 }
 .tile img.display {
   width: 100%;
   height: auto;
   margin-top: 5px;
 }
-.tile:hover img.display {
+.tile:hover img.display, .tile:active img.display {
   cursor: pointer;
   mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.9) 80%);
   -moz-mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.9) 80%);
   -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.9) 80%);
+
 }
 .hidden_tile {
   margin: 0;
